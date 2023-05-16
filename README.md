@@ -84,7 +84,7 @@ Output
 
 
 ## Tests
-     ```shell
+    ``shell
     Run php artisan test
 
     A successful test should look like this in your Vs code terminal
