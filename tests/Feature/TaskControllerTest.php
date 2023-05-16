@@ -21,6 +21,7 @@ class TaskControllerTest extends TestCase
         $response = $this->getJson('/api/tasks');
         $response->assertStatus(200)->assertJsonCount(1);
     }
+
     public function test_can_show_a_task() {
          $task = Task::factory()->create();
           $response = $this->getJson('/api/tasks/' . $task->id);
@@ -35,6 +36,7 @@ class TaskControllerTest extends TestCase
                  ]
             ]);
     }
+
     public function test_can_create_a_task() {
         $data = [
             'title' => 'Test Task',
@@ -56,6 +58,7 @@ class TaskControllerTest extends TestCase
             ]
         ]);
     }
+
     public function test_can_update_a_task() {
         $task = Task::factory()->create();
         $data = [
@@ -79,6 +82,7 @@ class TaskControllerTest extends TestCase
             ]
         ]);
     }
+
     public function test_can_delete_a_task() {
         $task = Task::factory()->create();
         $response = $this->deleteJson('/api/tasks/' . $task->id);

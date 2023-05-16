@@ -1,4 +1,4 @@
-# Laravel 2023 SDG Beginner's Task
+# Laravel 2023 SDG Intermediate Task
 
 This project is a simple Laravel task API that allows users to create, retrieve, update, and delete tasks. The API is built using Laravel and SQlite for data storage.
 
