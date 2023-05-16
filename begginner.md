@@ -31,7 +31,7 @@ This project is a simple Laravel task API that allows users to create, retrieve,
    DB_HOST=127.0.0.1
    DB_PORT=3306
 
-## Task 1 Instructions
+## Task Instructions
 
 You have been provided with the apiResource endpoints for basic CRUD and also the unit test which can be found in `your_project_directory\tests\Feature\TaskControllerTest.php` .
 Your work is to perform the following:
@@ -39,49 +39,6 @@ Your work is to perform the following:
 - Create a TaskController then ensure to link it to your api.php file to work well
 - Create all the functions needed by for the test to run perfectly
 - Run your test and ensure it works perfectly
-- Use a tool such as Postman or Insomnia to test the API endpoints.
-
-
-## Task 2 Instructions
-Complete the two question in the controller/Api/AlgorithmController. The getMaxSum and uniqueChars function
-### Question 1 - getMaxSum
-        Write a function called getMaxSum that takes an array of integers as input and returns the maximum sum of any contiguous subarray of the given array. If the array is empty or contains only negative integers, the function should return 0. The getMaxSum function takes an array of integers as input and returns the maximum sum of any contiguous subarray of the given array. If the array is empty or contains only negative integers, the function should return 0.
-
-### **Example Input and Output**
-##### Example 1
-
-Input
-
-    `getMaxSum([1, -3, 2, 1, -1]);`
-
-Output
-
-    `3`
-### Question 2 - uniqueChars
-        Complete the uniqueChars that takes a string as input and returns a new string containing only the unique characters in the input string, in the order that they first appear. If the input string is empty or contains only whitespaces, the function should return an empty string.
-
-// For example, if the input string is "hello world", the function should return "helo wrd".
-
-### **Example Input and Output**
-##### Example 1
-
-Input
-
-     `uniqueChars("hello world");`
-
-Output
-
-   `"helo wrd"`
-##### Example 2
-
-Input
-
-     `uniqueChars("");`
-
-Output
-
-   `""`
-
 
 ## Tests
      ```shell
@@ -92,3 +49,21 @@ Output
  ![A successful test should look like this in your Vs code terminal](public\Screenshottest.png)
 
 
+## Notes
+     Test Cases
+The following test cases are included in this repository:
+
+`test_can_list_all_tasks`
+This test verifies that the API endpoint for listing all tasks returns a valid response with a status code of 200 and the expected JSON structure.
+
+`test_can_show_a_task`
+This test verifies that the API endpoint for retrieving a specific task by its ID returns a valid response with a status code of 200 and the expected JSON structure.
+
+`test_can_create_a_task`
+This test verifies that the API endpoint for creating a new task returns a valid response with a status code of 201 and the expected JSON structure.
+
+`test_can_update_a_task`
+This test verifies that the API endpoint for updating an existing task returns a valid response with a status code of 200 and the expected JSON structure.
+
+`test_can_delete_a_task`
+This test verifies that the API endpoint for deleting an existing task returns a valid response with a status code of 204, and the task is no longer present in the database.
