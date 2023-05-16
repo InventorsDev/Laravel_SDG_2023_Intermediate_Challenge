@@ -89,6 +89,6 @@ Output
 
     A successful test should look like this in your Vs code terminal
 
- ![A successful test should look like this in your Vs code terminal](public\Screenshottest.png)
+ ![A successful test should look like this in your Vs code terminal](https://github.com/InventorsDev/Laravel_SDG_2023_Intermediate_Challenge/assets/39954854/119e6ee5-58aa-471e-8c33-b5fad0cde412)
 
 
