@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\TaskController;
+use App\Http\Controllers\Api\AlgorithmController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -21,3 +22,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::apiResource('tasks', TaskController::class);
 
+Route::get('fetch_get_sum/{arr}', [AlgorithmController::class, 'getMaxSum']);
+Route::get('get_unique_char/{str}', [AlgorithmController::class, 'uniqueChars']);
